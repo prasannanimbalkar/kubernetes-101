@@ -118,3 +118,10 @@ minikube service my-service
 ## Structure
 
 ![Alt text](image-3.png)
+
+## Architecture
+
+![Alt text](image-4.png)
+
+
+ref: https://www.youtube.com/watch?v=YbpobPVhjSA
