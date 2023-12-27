@@ -13,6 +13,8 @@ A pod is the smallest unit of work in k8s. It's a way to package up one or more 
 
 pods- Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
 
+https://kubernetes.io/docs/concepts/workloads/pods/
+
 this template cannot be autoscaled when -> kind: Pod
 to achieve autoscaling we do deployment
 
@@ -145,8 +147,7 @@ going to reach to cube API server so
 
 Cube API server is the point in which we
 interact with any command that you write
-or any cic system or any sdks they are
-all interacting with Cube API server so
+or any sdks they are all interacting with Cube API server so
 the first thing that the cube API server
 is going to do is authentication and
 authorization it's going to make sure
@@ -155,17 +156,15 @@ or make changes to the cluster is an
 authenticated and authorized Personnel
 so once the authentication completes you
 can see all these arrows going going up
-and down I'll be going I'll be not going
-into detail but I'll give a high level
-overview so etcd is nothing but uh it is
+and down 
+
+etcd is nothing but 
 a distributed database it also
 considered as the brain so it is going
-to store the state of the cluster and
-here we are having the cube scheduler so
-Cube scheduler plays a vital role so
-here we have entered the deployment. AML
+to store the state of the cluster 
+
+Cube scheduler plays a vital role in deployment. AML
 apply a command right so Cube scheduler
-what it is going to do is that so the
 deployment file has got a port to deploy
 and that Port has got a requirement
 right so each Port will be having
@@ -173,8 +172,9 @@ different requirement like um some Port
 will be having high memory requirement
 which which is basically dependent on
 the application some Port will have less
-memory requirement so what Cube
-scheduler is going to do is that it is
+memory requirement so what 
+
+Cube scheduler is
 going to go to this particular node or
 the number of nodes that are there so
 let's imagine that there are five node
