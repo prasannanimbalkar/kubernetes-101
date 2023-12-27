@@ -37,7 +37,7 @@ kubectl describe pod <pod_name>
 kubectl delete pod <pod_name>
 
 
-### Deployment
+## Deployment
 Deployments - Deployment is a type of controller in Kubernetes that automates the rolling update, scaling, and cleanup of pods.
 
 https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
@@ -70,7 +70,7 @@ spec:
 
 
 
-### Service
+## Service
 To expose a pod to the network, we need to use services.
 
 Service is an abstraction which defines a logical set of Pods and a policy by which to access them — creating a virtual network port on which
@@ -109,12 +109,12 @@ spec:
 
 ![Alt text](image-1.png)
 
-### Accessing service
+## Accessing service
 
 minikube service my-service
 
 ![Alt text](image-2.png)
 
-### Structure
+## Structure
 
 ![Alt text](image-3.png)
