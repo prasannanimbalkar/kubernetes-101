@@ -1,10 +1,16 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: react-app
 spec:
   containers:
-  - name: nginx
-    image: nginx:1.14.2
+  - name: react-app
+    image: peterjohnson1000/react-test-app:1.0
     ports:
     - containerPort: 80
+    livenessProbe:
+      httpGet:
+        path: /healthz
+        port: 80
+      initialDelaySeconds: 15
+      timeoutSeconds: 5

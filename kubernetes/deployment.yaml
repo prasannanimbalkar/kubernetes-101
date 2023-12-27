@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-app-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-app-depl
+  template:
+    metadata:
+      labels:
+        app: react-app-depl
+    spec:
+      containers:
+      - name: react-app-depl
+        image: peterjohnson1000/react-test-app:1.0
+        ports:
+        - containerPort: 80
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 80
+          initialDelaySeconds: 15
+          timeoutSeconds: 5
