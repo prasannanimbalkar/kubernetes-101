@@ -8,7 +8,7 @@ kubectl config current-context
 kubectl get namespace
 
 ```
-### Pods
+## Pods
 A pod is the smallest unit of work in k8s. It's a way to package up one or more containers with shared resources and
 
 pods- Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
